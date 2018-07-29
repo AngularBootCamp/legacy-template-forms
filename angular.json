@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sandbox",
+            "outputPath": "dist/legacy-template-forms",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sandbox:build"
+            "browserTarget": "legacy-template-forms:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sandbox:build:production"
+              "browserTarget": "legacy-template-forms:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sandbox:build"
+            "browserTarget": "legacy-template-forms:build"
           }
         },
         "test": {
@@ -97,7 +97,7 @@
         }
       }
     },
-    "sandbox-e2e": {
+    "legacy-template-forms-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -105,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sandbox:serve"
+            "devServerTarget": "legacy-template-forms:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sandbox:serve:production"
+              "devServerTarget": "legacy-template-forms:serve:production"
             }
           }
         },
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "sandbox"
+  "defaultProject": "legacy-template-forms"
 }
