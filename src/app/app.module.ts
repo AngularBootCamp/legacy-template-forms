@@ -9,4 +9,4 @@ import { LoginComponent } from './login';
   imports: [BrowserModule, FormsModule],
   bootstrap: [LoginComponent]
 })
-export class AppModule { }
+export class AppModule {}

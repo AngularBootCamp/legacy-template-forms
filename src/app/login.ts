@@ -1,11 +1,11 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './login.html'
 })
 export class LoginComponent {
-  credentials: { login: string, password: string };
+  credentials: { login: string; password: string };
 
   constructor() {
     this.credentials = { login: '', password: '' };
