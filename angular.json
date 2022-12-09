@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "legacy-template-forms",
   "newProjectRoot": "projects",
   "projects": {
     "legacy-template-forms": {
