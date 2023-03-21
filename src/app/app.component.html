@@ -16,7 +16,7 @@
       [(ngModel)]="credentials.login"
       #usernameControl="ngModel"
     />
-    <div>{{usernameControl.valid}}</div>
+    <div>{{ usernameControl.valid }}</div>
   </div>
 
   <div>
@@ -30,7 +30,7 @@
       #passwordControl="ngModel"
       [(ngModel)]="credentials.password"
     />
-    <div>{{passwordControl.valid}}</div>
+    <div>{{ passwordControl.valid }}</div>
   </div>
 
   <div>
@@ -49,9 +49,9 @@
     <div class="card-title">
       Data behind the login form
       <div>Form Object:</div>
-      <pre>{{loginForm.form.value | json}}</pre>
+      <pre>{{ loginForm.form.value | json }}</pre>
       <div>Form Validity:</div>
-      <div>{{loginForm.form.valid}}</div>
+      <div>{{ loginForm.form.valid }}</div>
     </div>
   </div>
 </section>

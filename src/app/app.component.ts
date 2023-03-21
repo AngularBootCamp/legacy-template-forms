@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './login.html'
+  templateUrl: './app.component.html'
 })
-export class LoginComponent {
+export class AppComponent {
   credentials: { login: string; password: string };
 
   constructor() {
