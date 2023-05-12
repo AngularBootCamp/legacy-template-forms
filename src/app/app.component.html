@@ -1,11 +1,6 @@
 <h4>Login Form</h4>
 
-<form
-  #loginForm="ngForm"
-  (ngSubmit)="onLogin()"
-  novalidate
-  class="two-across"
->
+<form #loginForm="ngForm" (ngSubmit)="onLogin()" novalidate>
   <div>
     <label for="usernameId">Login</label>
     <input
@@ -34,24 +29,18 @@
   </div>
 
   <div>
-    <button
-      class="btn"
-      type="submit"
-      [disabled]="!loginForm.form.valid"
-    >
+    <button type="submit" [disabled]="!loginForm.form.valid">
       Login
     </button>
   </div>
 </form>
 
-<section class="card">
-  <div class="card-content">
-    <div class="card-title">
-      Data behind the login form
-      <div>Form Object:</div>
-      <pre>{{ loginForm.form.value | json }}</pre>
-      <div>Form Validity:</div>
-      <div>{{ loginForm.form.valid }}</div>
-    </div>
-  </div>
-</section>
+<article>
+  <header>Data behind the login form</header>
+
+  <div>Form Object:</div>
+  <pre>{{ loginForm.form.value | json }}</pre>
+
+  <div>Form Validity:</div>
+  <div>{{ loginForm.form.valid }}</div>
+</article>
